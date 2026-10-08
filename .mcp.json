@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "linkup-db": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "tsx",
+        "--env-file-if-exists=${CLAUDE_PROJECT_DIR:-.}/.env",
+        "--tsconfig",
+        "${CLAUDE_PROJECT_DIR:-.}/tsconfig.json",
+        "${CLAUDE_PROJECT_DIR:-.}/mcp/linkup-db.ts"
+      ]
+    }
+  }
+}
